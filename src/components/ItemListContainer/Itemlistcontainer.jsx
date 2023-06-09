@@ -1,8 +1,10 @@
 
-const Itemlistcontainer = ({greeting}) => {
+import CardImages from "../Cards/CardImages";
+
+const Itemlistcontainer = () => {
   return (
-    <div>
-        <h1  className="text-center">{greeting}</h1>
+    <div className="imgContainer">
+        <CardImages/>
     </div>
   )
 }
