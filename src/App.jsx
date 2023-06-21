@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 import Accesoriospage from "../Views/Accesoriospage.jsx";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/item/:id" element={<ItemDetailContainer />} />
         <Route path="*" element={<h1>404 NOT FOUND</h1>} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

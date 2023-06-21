@@ -1,5 +1,4 @@
-.bg-navbar{
-
+footer{
     background: #11998e; 
     background: -webkit-linear-gradient(
       to right,
@@ -13,6 +12,12 @@
     ); 
 }
 
+
+.footer-copyright a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .link{
     margin: 0 10px;
     text-decoration: none ;
@@ -21,14 +26,3 @@
     font-weight: 600;
     transition: 0.5s;
 }
-
-.logo-png{
-    width: 80px;
-   
-    margin-right: 20px;
-}
-
-.logo-png img{
-  width: 100%;
-}
-
