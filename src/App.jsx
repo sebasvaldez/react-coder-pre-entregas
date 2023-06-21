@@ -4,35 +4,27 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Itemlistcontainer from "./components/ItemListContainer/Itemlistcontainer";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
+import Accesoriospage from "../Views/Accesoriospage.jsx";
+import EsteticaPage from "../Views/EsteticaPage";
+import SnacksPage from "../Views/SnacksPage";
+import HomePage from "../Views/HomePage";
 
 function App() {
   return (
     <Router>
       <Navbar />
+
       <Routes>
-
-      
-        <Route
-          path="/"
-          element={
-            <Itemlistcontainer
-              
-            />
-          }
-        />
-
-        <Route
-          path="/category/:id"
-          element={<Itemlistcontainer greeting={"category:id"} />}
-        />
-
+        <Route path="/" element={<HomePage />} />
+        <Route path="/category/estetica" element={<EsteticaPage />} />
+        <Route path="/category/accesorios" element={<Accesoriospage />} />
+        <Route path="/category/snacks" element={<SnacksPage />} />
+        <Route path="/category/:id" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path="*" element={<h1>404 NOT FOUND</h1>} />
       </Routes>
-      
-      
-      
     </Router>
   );
 }

@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import "./NavBarStyles.css";
 import logo from "./assets/dog_lover_logo.png"
 import { Link } from "react-router-dom";
-
+import EsteticaPage from "../../../Views/EsteticaPage.jsx";
 import Cartwidget from "../Cartwidget/Cartwidget";
 
 const NavBar = () => {

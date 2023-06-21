@@ -1,10 +1,8 @@
-import React from 'react'
-import CardImages from '../src/components/Cards/CardImages'
-
+import ItemListContainer from "../src/components/ItemListContainer/ItemListContainer"
 const HomePage = () => {
   return (
     <>
-        <CardImages />
+        <ItemListContainer />
     </>
   )
 }
