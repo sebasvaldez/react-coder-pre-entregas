@@ -1,8 +1,8 @@
 import CardImages from "../Cards/CardImages";
 
 import { useEffect, useState } from "react";
-//import { useParams } from "react-router-dom";
-import { getProducts,filterCategory } from "../../asyncMock";
+
+import { getProducts } from "../../asyncMock";
 
 const ItemListContainer = () => {
 
@@ -16,10 +16,6 @@ const ItemListContainer = () => {
   }, []);
   
   
-  
-
-
-
   return (
     <div className="imgContainer">
       <CardImages products={products} />
